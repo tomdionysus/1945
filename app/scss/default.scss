@@ -1,0 +1,324 @@
+/* Default SCSS file. Please place all SCSS files in the scss directory. */
+
+html {
+	overflow: none;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+.container {
+  text-align: center;
+}
+
+.g1945screen {
+  width: 800px;
+  height: 600px;
+  background-color: #024994;
+  position: relative;
+  overflow: hidden;
+}
+
+.g1945logo {
+  width: 503px;
+  height: 147px;
+  position: absolute;
+  background-image: url('/img/1945/logo.gif');
+  z-index:200;
+}
+
+@-webkit-keyframes plane0 {
+   0% { background-position: -133px -1px; }
+   25% { background-position: -1px -1px;  }
+   50% { background-position: -67px -1px; }
+   75% { background-position: -133px -1px; }
+   100% { background-position: -133px -1px; }
+}
+
+@-webkit-keyframes plane1 {
+   0% { background-position: -331px -1px; }
+   25% { background-position: -199px -1px;  }
+   50% { background-position: -265px -1px; }
+   75% { background-position: -331px -1px; }
+   100% { background-position: -331px -1px; }
+}
+
+@-webkit-keyframes plane2 {
+   0% { background-position: -133px -67px; }
+   25% { background-position: -1px -67px;  }
+   50% { background-position: -67px -67px; }
+   75% { background-position: -133px -67px; }
+   100% { background-position: -133px -67px; }
+}
+
+.g1945-plr0 {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  -webkit-animation-name: plane0;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+  background-image: url('/img/sprite.png');
+  z-index: 50;
+}
+
+.g1945-plr0-hit {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background-position: -414px -331px;
+  background-image: url('/img/sprite.png');
+  z-index: 50;
+}
+
+.g1945-plr1 {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  -webkit-animation-name: plane1;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+  background-image: url('/img/sprite.png');
+  z-index: 50;
+}
+
+.g1945-plr1-hit {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background-position: -414px -463px;
+  background-image: url('/img/sprite.png');
+  z-index: 50;
+}
+
+.g1945-plr2 {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  -webkit-animation-name: plane2;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+  background-image: url('/img/sprite.png');
+  z-index: 50;
+}
+
+.g1945-plr2-hit {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background-position: -414px -397px;
+  background-image: url('/img/sprite.png');
+  z-index: 50;
+}
+
+.g1945-blt0 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -232px -67px;
+}
+
+.g1945-blt1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -265px -67px;
+}
+
+
+.g1945-isl0 {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -1px -298px;
+}
+
+.g1945-isl1 {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -66px -298px;
+}
+
+.g1945-isl2 {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -131px -298px;
+}
+
+.g1945swooper {
+  opacity: 0.7;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  -webkit-animation-name: plane0;
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+  background-image: url('/img/sprite.png');
+  z-index: 49;
+}
+
+@-webkit-keyframes exp_small {
+   0% { background-position: -199px -100px;  }
+   28% { background-position: -232px -100px; }
+   42% { background-position: -265px -100px; }
+   56% { background-position: -298px -100px; }
+   70% { background-position: -331px -100px; }
+   84% { background-position: -364px -100px; }
+   100% { background-position: -410px -263px; }
+}
+
+.g1945-exps {
+  width: 32px;
+  height: 32px;
+  background-image: url('/img/sprite.png');
+  background-position: -410px -263px;
+  position: absolute;
+  -webkit-animation-name: exp_small;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: step-start;
+  z-index: 50;
+  opacity: 0.9;
+}
+
+@-webkit-keyframes exp_large {
+   0% { background-position: -397px -133px; }
+   15% { background-position: -331px -133px; }
+   30% { background-position: -265px -133px; }
+   45% { background-position: -199px -133px; }
+   60% { background-position: -133px -133px; }
+   65% { background-position: -67px -133px; }
+   80% { background-position: -1px -133px;  }
+   100% { background-position: -410px -263px; }
+}
+
+.g1945-expl {
+  width: 64px;
+  height: 64px;
+  background-image: url('/img/sprite.png');
+  background-position: -410px -263px;
+  position: absolute;
+  -webkit-animation-name: exp_large;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: step-start;
+  z-index: 50;
+  opacity: 0.9;
+}
+
+.g1945-logo {
+  background-image: url('/img/sprite.png');
+  background-position: -14px -537px;
+  position: absolute;
+  width: 515px;
+  height: 157px;
+  top: 100px;
+  left: 157px;
+  z-index: 9999;
+}
+
+.g1945-spacetoplay {
+  background-image: url('/img/sprite.png');
+  background-position: -450px -30px;
+  position: absolute;
+  width: 250px;
+  height: 46px;
+  left: 288px;
+  top: 400px;
+  z-index: 9999;
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+}
+
+@-webkit-keyframes blink {
+   0% { opacity: 1 }
+   50% { opacity: 0  }
+   100% { opacity: 1  }
+}
+
+.g1945-gameover {
+  background-image: url('/img/sprite.png');
+  background-position: -503px -364px;
+  position: absolute;
+  width: 179px;
+  height: 24px;
+  left: 320px;
+  top: 320px;
+  z-index: 9999;
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+}
+
+.g1945-playername {
+  position: relative;
+  color: white;
+  top: 62px;
+  left: 8px;
+}
+
+
+.g1945-pow2 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -1px -463px;
+}
+
+.g1945-pow1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -34px -463px;
+}
+
+.g1945-pow0 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -67px -463px;
+}
+
+.g1945-hlt {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -133px -463px;
+}
+
+.g1945-hlt {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url('/img/sprite.png');
+  background-position: -166px -463px;
+}
+
+.g1945-healthBar {
+  height: 20px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: #FF0000;
+  z-index: 9999;
+}

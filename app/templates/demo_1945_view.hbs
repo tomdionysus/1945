@@ -1,0 +1,13 @@
+<h1>Demo - 1945</h1>
+{{view "App.NavBarView" pageDemoApp=true}}
+
+	<p> Use Arrow keys Up, Down, Left and Right to play, space to shoot. <a class="btn btn-info btn-mini pull-right" {{action "restart"}}>Restart Game</a></p>
+	<p>Score: {{bind "App.g1945Controller.score"}} - Health: {{bind "App.g1945Controller.health"}}</p>
+
+	{{view "App.G1945GameView" 
+		name='game'
+		scoreNotifyBinding="App.g1945Controller.score"
+		healthNotifyBinding="App.g1945Controller.health"
+	}}
+
+</div>
