@@ -1,12 +1,12 @@
 {
   "author": "Tom Cully",
-  "name": "mozart-empty",
-  "description": "Empty Mozart Project",
+  "name": "1945",
+  "description": "Retro 1945 Gaming",
   "version": "0.0.1",
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git@github.com:bigcommerce/mozart-empty.git"
+    "url": "git@github.com:tomcully/1945.git"
   },
   "engines": {
     "node": "0.8.x"
@@ -24,6 +24,7 @@
 
     "connect-livereload": "0.2.0",
     "grunt": "0.4.x",
+    "grunt-cli": "0.1.x",
     "grunt-contrib-coffee": "0.4.x",
     "grunt-coffeelint": "0.0.6",
     "grunt-contrib-handlebars": "0.5.9",
