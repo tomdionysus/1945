@@ -200,6 +200,9 @@ module.exports = function (grunt) {
          * 'run' shortcut below, and remove the accompanying 'scss' block from the 'watch' task.
          */
         sass: {
+            dist: {
+                options: { sourcemap: 'none' },
+            },
             app: {
                 files: {
                     'public/css/app.css': 'app/scss/*'                    
